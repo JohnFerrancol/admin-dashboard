@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <aside class="nav">
+    <aside class="navigation">
       <div class="website-logo">
         <img
           class="dashboard-icon"
@@ -98,10 +98,43 @@
       </nav>
     </aside>
 
-    <div class="header">
-      <img src="assets/logo/search.svg" alt="search" class="search-icon" />
-      <img src="assets/img/duck.webp" alt="profile-pic" class="profile" />
-      <h1>Hi There John!</h1>
-    </div>
+    <header class="utility-bar">
+      <div class="search-bar">
+        <img src="assets/logo/search.svg" alt="search" class="search-icon" />
+        <input class="search-input" />
+      </div>
+      <div class="user-actions">
+        <img
+          src="assets/logo/bell.svg"
+          alt="notification"
+          class="notifications-icon"
+        />
+        <img
+          src="assets/img/duck.webp"
+          alt="user-profile"
+          class="profile-picture-small profile-pictures"
+        />
+        <a href="#" class="user-name">@JohnFerrancol</a>
+      </div>
+      <div class="user-summary">
+        <img
+          src="assets/img/duck.webp"
+          alt="user-profile"
+          class="profile-picture-big profile-pictures"
+        />
+        <div class="intro-to-user">
+          <p class="introduction">Hi there,</p>
+          <h2 class="display-username">John Ferrancol (@JohnFerrancol)</h2>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="action-buttons">New</button>
+        <button class="action-buttons">Upload</button>
+        <button class="action-buttons">Share</button>
+      </div>
+    </header>
+    <main>
+      <div>L Bozo</div>
+    </main>
   </body>
 </html>
