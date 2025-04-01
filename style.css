@@ -13,13 +13,68 @@
 }
 
 body {
+  font-family: var(--font-style);
+
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+}
+
+.nav {
+  grid-column: 1 / 2;
+  padding: 1.1rem;
   background-color: var(--color-blue);
   color: var(--color-white);
-  font-family: var(--font-style);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.website-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dashboard-icon {
+  filter: var(--color-svgs-file);
+  width: 3rem;
+}
+
+.dashboard-text {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-primary > ul,
+.nav-secondary > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-items {
+  width: 2rem;
+  height: auto;
+  filter: var(--color-svgs-file);
+}
+
+.nav-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
 }
 
 .search-icon {
-  filter: var(--color-svgs-file); /* This changes the icon color */
   width: 50px;
   height: 50px;
 }
