@@ -1,0 +1,31 @@
+:root {
+  --color-blue: #1992d4;
+  --color-white: #e2e8f0;
+  --color-svgs-file: invert(95%) sepia(6%) saturate(302%) hue-rotate(180deg)
+    brightness(97%) contrast(95%);
+  --font-style: "Roboto", san-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-family: var(--font-style);
+}
+
+.search-icon {
+  filter: var(--color-svgs-file); /* This changes the icon color */
+  width: 50px;
+  height: 50px;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
