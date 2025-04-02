@@ -8,11 +8,12 @@
     brightness(97%) contrast(95%);
   --font-style: "Roboto", san-serif;
   --heading-padding: 20px;
+  --main-box-shadow: 0px 2px 3px var(--color-box-shadow);
 }
 
 @media screen and (max-width: 2560px) {
   html {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 1920px) {
@@ -227,7 +228,7 @@ main .project {
     transparent 100%
   );
   border-radius: 1rem;
-  box-shadow: 0px 2px 3px var(--color-box-shadow);
+  box-shadow: var(--main-box-shadow);
   background-color: var(--color-white);
 }
 
@@ -260,12 +261,13 @@ main .odin-courses {
   padding: 2rem;
 }
 
-main .odin-courses > h3 {
+main .odin-courses > h3,
+.top-projects > h3 {
   margin-bottom: 2rem;
 }
 
 main .courses-container {
-  box-shadow: 0px 2px 3px var(--color-box-shadow);
+  box-shadow: var(--main-box-shadow);
   background-color: var(--color-white);
   padding: 1rem 2rem;
   border-radius: 1rem;
@@ -276,8 +278,27 @@ main .course-title,
   margin: 0.5rem 0;
 }
 
-main .trending-projects {
+main .top-projects {
   grid-column: 2;
   grid-row: 2 / span 1;
   padding: 2rem;
+}
+
+main .top-projects-users {
+  background-color: var(--color-white);
+  box-shadow: var(--main-box-shadow);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+}
+
+main .top-users {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+main .profile-pictures-others {
+  width: 3rem;
+  height: 3rem;
 }
