@@ -18,4 +18,4 @@ This design requirement of the project is as follows: [Requirement](https://cdn.
 
 ## Roadmap
 - [x] Understanding the design requirements of the project
-- [ ] Replicating the layout of the given requirements to the project
+- [x] Replicating the layout of the given requirements to the project
